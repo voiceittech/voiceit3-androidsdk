@@ -225,7 +225,7 @@ Please make sure that the color is a valid Hex value. The parseColor method thro
 
 ### Other API Calls
 
-Please refer to https://qpi.voiceit.io/?java# for information about all API calls
+Please refer to https://api.voiceit.io/?java# for information about all API calls
 
 *Remember to add "new JsonHttpResponseHandler() {...}" as the last argument*
 

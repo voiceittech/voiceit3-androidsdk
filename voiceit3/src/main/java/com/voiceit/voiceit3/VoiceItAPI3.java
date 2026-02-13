@@ -33,7 +33,7 @@ public class VoiceItAPI3 {
     private int voiceitThemeColor = 0;
 
     private final String mTAG = "VoiceItAPI3";
-    private String BASE_URL = "https://qpi.voiceit.io";
+    private String BASE_URL = "https://api.voiceit.io";
 
     public boolean mDisplayPreviewFrame = false;
 
