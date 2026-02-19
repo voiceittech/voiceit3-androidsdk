@@ -32,7 +32,7 @@ jobs:
           api-level: 28
           target: default
           arch: x86_64
-          script: ./gradlew connectedAndroidTest
+          script: ./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.key=$VIAPIKEY -Pandroid.testInstrumentationRunnerArguments.tok=$VIAPITOKEN
         env:
-          VOICEIT_API_KEY: ${{ secrets.VOICEIT_API_KEY }}
-          VOICEIT_API_TOKEN: ${{ secrets.VOICEIT_API_TOKEN }}
+          VIAPIKEY: ${{ secrets.VIAPIKEY }}
+          VIAPITOKEN: ${{ secrets.VIAPITOKEN }}
