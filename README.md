@@ -6,7 +6,6 @@ A fully comprehensive SDK that gives you access to VoiceIt's API 3.0 featuring V
 * [Getting Started](#getting-started)
 * [Requirements](#requirements)
 * [Installation](#installation)
-* [Local Installation](#local-installation)
 * [API Calls](#api-calls)
   * [Initialization](#initialization)
   * [Encapsulated Methods](#encapsulated-methods)
@@ -60,14 +59,11 @@ android.enableJetifier=true
 
 ## Installation
 
-VoiceItApi3AndroidSDK is available through [JitPack](https://jitpack.io/#voiceittech/VoiceItApi3AndroidSDK/).
+Add the SDK as a module from GitHub:
 
-## Local Installation
-<ul>
- <li> Clone the repo
- <li> Open your android project in android studio, and navigate to File -> New -> Import Module
- <li> Select the Android SDK repo that you just cloned. Check off the app module, only include the voiceit3 module
-</ul>
+1. Clone the repo: `git clone https://github.com/voiceittech/VoiceIt3-AndroidSDK.git`
+2. In Android Studio, go to **File > New > Import Module**
+3. Select the cloned repo directory and include only the `voiceit3` module
 
 ## API Calls
 
