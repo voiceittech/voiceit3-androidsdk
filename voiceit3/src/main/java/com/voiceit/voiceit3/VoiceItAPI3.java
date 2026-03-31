@@ -401,11 +401,8 @@ public class VoiceItAPI3 {
             responseHandler.sendFailureMessage(200, null, buildJSONFormatMessage().toString().getBytes(), new Throwable());
             return;
         }
-        RequestParams params = new RequestParams();
-        params.put("groupId", groupId);
-        params.put("userId", userId);
 
-        client.put(getAbsoluteUrl("/groups/removeUser" + "?notificationURL=" + this.notificationURL), params, responseHandler);
+        client.delete(getAbsoluteUrl("/groups/removeUser" + "?groupId=" + groupId + "&userId=" + userId + "&notificationURL=" + this.notificationURL), responseHandler);
     }
 
     public void deleteGroup(String groupId, AsyncHttpResponseHandler responseHandler) {
