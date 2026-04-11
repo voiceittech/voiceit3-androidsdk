@@ -117,7 +117,9 @@
                     android:hint="Phrase"
                     android:text="never forget tomorrow is a new day"
                     android:textColor="@color/textPrimary"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:paddingTop="14dp"
+                    android:gravity="start" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
