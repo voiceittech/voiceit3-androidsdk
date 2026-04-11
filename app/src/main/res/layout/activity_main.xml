@@ -14,8 +14,8 @@
 
         <!-- Header -->
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:src="@android:drawable/ic_lock_idle_lock"
@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:text="VoiceIt API 3.0"
-            android:textSize="26sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/textPrimary" />
 
@@ -39,7 +39,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="24dp"
             android:text="Biometric Verification Demo"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textColor="@color/textSecondary" />
 
         <!-- Credentials -->
@@ -150,7 +150,7 @@
             android:id="@+id/voiceEnrollBtn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:text="Voice Enrollment"
             android:textAllCaps="false"
             android:textSize="15sp"
@@ -164,7 +164,7 @@
             android:id="@+id/faceEnrollBtn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:text="Face Enrollment"
             android:textAllCaps="false"
             android:textSize="15sp"
@@ -202,7 +202,7 @@
             android:id="@+id/voiceVerifyBtn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:text="Voice Verification"
             android:textAllCaps="false"
             android:textSize="15sp"
@@ -216,7 +216,7 @@
             android:id="@+id/faceVerifyBtn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:text="Face Verification"
             android:textAllCaps="false"
             android:textSize="15sp"
