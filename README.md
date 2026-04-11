@@ -29,13 +29,7 @@ A fully comprehensive SDK that gives you access to VoiceIt's API 3.0 featuring V
 ## UI Screenshots
 
 <div>
-  <img width="290px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_top.png" style="display: inline-block !important;"/><img width="290px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_bottom.png" style="display: inline-block !important;"/>
-</div>
-
-The following show Voice Verification, Face Verification, and Video Verification.
-
-<div style="background: #000 !important;">
-  <img width="290px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/voiceVerification.png?v=2" style="display: inline-block !important"/><img width="290px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/faceVerification.png?v=2" style="display: inline-block !important;"/><img width="290px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/videoVerification.png?v=2" style="display: inline-block !important;"/>
+  <img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_top.png" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_bottom.png" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/voiceEnrollment.png" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/faceEnrollment.png" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/videoEnrollment.png" style="display: inline-block !important;"/>
 </div>
 
 ## Getting Started
