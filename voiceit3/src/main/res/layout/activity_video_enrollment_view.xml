@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.voiceit.voiceit3.RadiusOverlayView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:view_type="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/overlay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    view_type:view_type="video"
-    tools:context="com.voiceit.voiceit3.VideoEnrollmentView">
+    android:orientation="vertical">
 
     <include layout="@layout/voiceit_toolbar" />
 
-    <com.voiceit.voiceit3.CameraSourcePreview
-        android:id="@+id/camera_preview"
+    <com.voiceit.voiceit3.RadiusOverlayView
+        android:id="@+id/overlay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        view_type:view_type="video"
+        tools:context="com.voiceit.voiceit3.VideoEnrollmentView">
 
-</com.voiceit.voiceit3.RadiusOverlayView>
+        <com.voiceit.voiceit3.CameraSourcePreview
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.voiceit.voiceit3.RadiusOverlayView>
+
+</LinearLayout>
