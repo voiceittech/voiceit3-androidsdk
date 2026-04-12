@@ -133,7 +133,7 @@ public class VideoEnrollmentView extends AppCompatActivity implements SensorEven
             exitViewWithMessage("voiceit-failure","Error starting camera");
         } else {
             if (mEnrollmentCount < mNeededEnrollments) {
-                mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                 // Start tracking faces
                 FaceTracker.continueDetecting = true;
             } else {
@@ -142,7 +142,7 @@ public class VideoEnrollmentView extends AppCompatActivity implements SensorEven
                 mVoiceIt3.deleteAllEnrollments(mUserId, new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, JSONObject Response) {
-                        mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                        mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                         // Start tracking faces
                         FaceTracker.continueDetecting = true;
                     }
@@ -426,7 +426,7 @@ public class VideoEnrollmentView extends AppCompatActivity implements SensorEven
                             }, 2000);
                         } else if (mContinueEnrolling) {
                             if(FaceTracker.lookingAway) {
-                                mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                                mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                             }
                             // Try again
                             FaceTracker.continueDetecting = true;
@@ -500,7 +500,7 @@ public class VideoEnrollmentView extends AppCompatActivity implements SensorEven
                                                                 }, 2500);
                                                             } else {
                                                                 if (FaceTracker.lookingAway) {
-                                                                    mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                                                                    mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                                                                 }
                                                                 // Continue showing live camera preview
                                                                 mOverlay.setPicture(null);

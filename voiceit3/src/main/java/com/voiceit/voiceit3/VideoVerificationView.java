@@ -141,7 +141,7 @@ public class VideoVerificationView extends AppCompatActivity implements SensorEv
                                 }
                             }, 2500);
                         } else {
-                            mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                            mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                             FaceTracker.continueDetecting = true;
                         }
                     } catch (JSONException e) {
@@ -447,7 +447,7 @@ public class VideoVerificationView extends AppCompatActivity implements SensorEv
                             },2000);
                         } else if (mContinueVerifying) {
                             if(FaceTracker.lookingAway) {
-                                mOverlay.updateDisplayText("LOOK_INTO_CAM");
+                                mOverlay.updateDisplayText("VIDEO_LOOK_INTO_CAM", mPhrase);
                             }
                             FaceTracker.continueDetecting = true;
                         }
