@@ -1,10 +1,10 @@
-<img src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/android.png" width="100%" style="width:100%">
+<img src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/android.png" width="100%" style="width:100%">
 
-[![Build](https://github.com/voiceittech/voiceit3-androidsdk/actions/workflows/test.yml/badge.svg)](https://github.com/voiceittech/voiceit3-androidsdk/actions/workflows/test.yml)
-[![Dependabot](https://img.shields.io/github/issues-pr/voiceittech/voiceit3-androidsdk/dependencies?label=dependabot&logo=dependabot&color=025e8c)](https://github.com/voiceittech/voiceit3-androidsdk/pulls?q=is%3Apr+label%3Adependencies)
-[![Version](https://img.shields.io/badge/version-3.1.0-blue)](https://github.com/voiceittech/voiceit3-androidsdk)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/voiceittech/voiceit3-androidsdk/blob/main/LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Android%2021%2B-brightgreen)](https://github.com/voiceittech/voiceit3-androidsdk)
+[![Build](https://github.com/voiceittech/voiceit3-android-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/voiceittech/voiceit3-android-sdk/actions/workflows/test.yml)
+[![Dependabot](https://img.shields.io/github/issues-pr/voiceittech/voiceit3-android-sdk/dependencies?label=dependabot&logo=dependabot&color=025e8c)](https://github.com/voiceittech/voiceit3-android-sdk/pulls?q=is%3Apr+label%3Adependencies)
+[![Version](https://img.shields.io/badge/version-3.1.0-blue)](https://github.com/voiceittech/voiceit3-android-sdk)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/voiceittech/voiceit3-android-sdk/blob/main/LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Android%2021%2B-brightgreen)](https://github.com/voiceittech/voiceit3-android-sdk)
 [![VoiceIt API](https://img.shields.io/badge/VoiceIt-API%203.0-blue)](https://voiceit.io)
 
 A fully comprehensive SDK that gives you access to VoiceIt's API 3.0 featuring Voice + Face Verification and Identification right in your Android app.
@@ -29,14 +29,14 @@ A fully comprehensive SDK that gives you access to VoiceIt's API 3.0 featuring V
 ## UI Screenshots
 
 <div>
-  <img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_top.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/demo_bottom.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/voiceEnrollment.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/faceEnrollment.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/videoEnrollment.png?v=5" style="display: inline-block !important;"/>
+  <img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/demo_top.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/demo_bottom.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/voiceEnrollment.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/faceEnrollment.png?v=5" style="display: inline-block !important;"/><img width="250px" src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/videoEnrollment.png?v=5" style="display: inline-block !important;"/>
 </div>
 
 ## Getting Started
 
 Sign up at [voiceit.io/pricing](https://voiceit.io/pricing) to get your API Key and Token, then log in to the [Dashboard](https://dashboard.voiceit.io) to manage your account.
 
-<img src="https://raw.githubusercontent.com/voiceittech/voiceit3-androidsdk/main/Graphics/getcredentials.png" alt="API Key and Token" width="400px" />
+<img src="https://raw.githubusercontent.com/voiceittech/voiceit3-android-sdk/main/Graphics/getcredentials.png" alt="API Key and Token" width="400px" />
 
 ## Requirements
 #### SDK Version
@@ -66,7 +66,7 @@ Add the GitHub Packages Maven repository to your project's `settings.gradle`:
 dependencyResolutionManagement {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/voiceittech/voiceit3-androidsdk")
+            url = uri("https://maven.pkg.github.com/voiceittech/voiceit3-android-sdk")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") ?: ""
                 password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.key") ?: ""
@@ -80,13 +80,13 @@ Then add the dependency to your app's `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.voiceittech:voiceit3-androidsdk:3.0.0'
+    implementation 'com.voiceittech:voiceit3-android-sdk:3.0.0'
 }
 ```
 
 ### Via source
 
-1. Clone the repo: `git clone https://github.com/voiceittech/voiceit3-androidsdk.git`
+1. Clone the repo: `git clone https://github.com/voiceittech/voiceit3-android-sdk.git`
 2. In Android Studio, go to **File > New > Import Module**
 3. Select the cloned repo directory and include only the `voiceit3` module
 
@@ -234,8 +234,8 @@ to the strings.xml file in your app.
 
 If you find this SDK useful, please consider giving it a star on GitHub — it helps others discover the project!
 
-[![GitHub stars](https://img.shields.io/github/stars/voiceittech/voiceit3-androidsdk?style=social)](https://github.com/voiceittech/voiceit3-androidsdk/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/voiceittech/voiceit3-android-sdk?style=social)](https://github.com/voiceittech/voiceit3-android-sdk/stargazers)
 
 ## License
 
-voiceit3-androidsdk is available under the MIT license. See the LICENSE file for more info.
+voiceit3-android-sdk is available under the MIT license. See the LICENSE file for more info.

@@ -37,14 +37,14 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.voiceittech'
-                artifactId = 'voiceit3-androidsdk'
+                artifactId = 'voiceit3-android-sdk'
                 version = '3.1.0'
             }
         }
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/voiceittech/voiceit3-androidsdk")
+                url = uri("https://maven.pkg.github.com/voiceittech/voiceit3-android-sdk")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") ?: ""
                     password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.key") ?: ""
