@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 
 android {
     namespace "com.voiceit.voiceit3"
-    compileSdk 35
+    compileSdk 36
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 34

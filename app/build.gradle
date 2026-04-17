@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "com.voiceit.voiceit3sdk"
-    compileSdk 35
+    compileSdk 36
     defaultConfig {
         applicationId "com.voiceit.voiceit3sdk"
         minSdkVersion 21
