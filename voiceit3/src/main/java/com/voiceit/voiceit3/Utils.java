@@ -83,11 +83,11 @@ class Utils {
     // CameraXBinder.startRecording instead of legacy MediaRecorder + Camera1.
     static void startMediaRecorder(MediaRecorder mediaRecorder, File audioFile) {
         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.DEFAULT);
-        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
+        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
         mediaRecorder.setAudioSamplingRate(48000);
         mediaRecorder.setAudioChannels(1);
-        mediaRecorder.setAudioEncodingBitRate(16000);
+        mediaRecorder.setAudioEncodingBitRate(256000);
         mediaRecorder.setOutputFile(audioFile.getAbsolutePath());
 
         try {
