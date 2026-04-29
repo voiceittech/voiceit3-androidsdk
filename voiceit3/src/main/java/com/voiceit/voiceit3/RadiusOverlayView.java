@@ -237,7 +237,8 @@ class RadiusOverlayView extends LinearLayout {
 
         // text color and style
         textPaint.setColor(getResources().getColor(R.color.instructionalText));
-        textPaint.setFakeBoldText(true);
+        // Voice waveform views match iOS regular-weight system font; portrait keeps bold.
+        textPaint.setFakeBoldText(!mDrawWaveform);
     }
 
     public void setPicture(byte[] data) {
@@ -338,11 +339,12 @@ class RadiusOverlayView extends LinearLayout {
                 float x = 0.0f;
                 while (x < ((float) mViewWidth) + mWaveformDensity) {
 
+                    // Match iOS: waveform sits in upper third of view (centered ~35% from top)
                     double y = (((((double) mWaveformMaxAmplitude) * ((-Math.pow((double) ((x / mViewMid) - 1.0f), 2.0d)) + 1.0d))
                             * ((double) normedAmplitude))
                             * Math.sin(((6.282d * ((double) (x / ((float) mViewWidth))))
                             * ((double) mWaveformFrequency)) + ((double) mWaveformPhase)))
-                            + (((double) mViewHeight) / 2.0d);
+                            + (((double) mViewHeight) * 0.35d);
 
                     if (x == 0.0f) {
                         mWaveformPath.moveTo(x, (float) y);
